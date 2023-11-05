@@ -2,6 +2,7 @@
 
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
+using MongoDB.Driver;
 
 namespace webapi.Controllers;
 
@@ -10,6 +11,16 @@ namespace webapi.Controllers;
 [Route("car-list")]
 public class CarsController : ControllerBase
 {
+    private readonly IMongoCollection<Car> _carsCollection;
+    
+    // Inject the IMongoClient and IConfiguration to access the MongoDB
+
+    public CarsController(IMongoClient client, IConfiguration config)
+    {
+        var database = client.GetDatabase(config["MongoDB:DatabaseName"]);
+        _carsCollection = database.GetCollection<Car>("Cars");
+    }
+
     public class Car
     {
         public string Make { get; set; }
@@ -36,10 +47,12 @@ public class CarsController : ControllerBase
 
     [HttpPost]
 
-    public IActionResult Post([FromBody] Car newCar)
+    public async Task <IActionResult> Post([FromBody] Car newCar)
     {
         // For now, we just console write the new car details.
         Console.WriteLine($"Make: {newCar.Make}, Model: {newCar.Model}, Year: {newCar.Year}");
+        
+        await _carsCollection.InsertOneAsync(newCar);
 
         return CreatedAtAction(nameof(Get), new { id = newCar.Year }, newCar);
 
