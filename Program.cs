@@ -1,3 +1,4 @@
+using FluentValidation.AspNetCore;
 using MongoDB.Driver;
 using webapi;
 
@@ -6,7 +7,9 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+
+builder.Services.AddControllers()
+    .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<CarValidator>());
 
 // Add MongoDB services to the container
 var mongoDBSettings = builder.Configuration.GetSection("MongoDB").Get<MongoDBSettings>();
@@ -27,9 +30,6 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
-    
- 
-
 }
 
 app.UseHttpsRedirection();
@@ -39,5 +39,3 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
-
-
