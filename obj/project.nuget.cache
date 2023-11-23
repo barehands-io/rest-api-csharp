@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "6nJQd5emMdVODQV3Xtle8EaOT+VN4x/n4QlD8GqumGtPVwpVcIdISCdzorq87t1pSEpQCd9JIHkkZrH3dcMmjg==",
+  "dgSpecHash": "yGRMyT9a+J6LdE3Q4+I+d0ij6cXxomtsI8DQiwg70Fv2pANL2ZFRT8Qt9XhLTpJpKrkipwvWSP6905kwUDME9A==",
   "success": true,
   "projectFilePath": "/Users/centurion-pc/code/net-code/webapi/webapi.csproj",
   "expectedPackageFiles": [
@@ -32,7 +32,10 @@
     "/Users/centurion-pc/.nuget/packages/system.runtime.compilerservices.unsafe/5.0.0/system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512",
     "/Users/centurion-pc/.nuget/packages/system.security.accesscontrol/5.0.0/system.security.accesscontrol.5.0.0.nupkg.sha512",
     "/Users/centurion-pc/.nuget/packages/system.security.principal.windows/5.0.0/system.security.principal.windows.5.0.0.nupkg.sha512",
-    "/Users/centurion-pc/.nuget/packages/zstdsharp.port/0.6.2/zstdsharp.port.0.6.2.nupkg.sha512"
+    "/Users/centurion-pc/.nuget/packages/zstdsharp.port/0.6.2/zstdsharp.port.0.6.2.nupkg.sha512",
+    "/Users/centurion-pc/.nuget/packages/microsoft.netcore.app.ref/7.0.14/microsoft.netcore.app.ref.7.0.14.nupkg.sha512",
+    "/Users/centurion-pc/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.14/microsoft.aspnetcore.app.ref.7.0.14.nupkg.sha512",
+    "/Users/centurion-pc/.nuget/packages/microsoft.netcore.app.host.osx-arm64/7.0.14/microsoft.netcore.app.host.osx-arm64.7.0.14.nupkg.sha512"
   ],
   "logs": []
 }
