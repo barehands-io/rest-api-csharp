@@ -1,0 +1,11 @@
+# Ignore build outputs
+*.dll
+*.pdb
+
+# Ignore all JSON files (if you're sure you want to ignore all JSON files)
+*.json
+# Or ignore specific JSON files
+sourceLink.json
+bin/**/*.json
+obj/**/*.json
+bin/**/*.lock.json
