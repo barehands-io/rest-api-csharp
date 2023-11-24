@@ -1,10 +1,8 @@
 
 
 using Microsoft.AspNetCore.Mvc;
-using System.Collections.Generic;
 using MongoDB.Driver;
 
-using System.ComponentModel.DataAnnotations;
 
 
 namespace webapi.Controllers;

@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "yGRMyT9a+J6LdE3Q4+I+d0ij6cXxomtsI8DQiwg70Fv2pANL2ZFRT8Qt9XhLTpJpKrkipwvWSP6905kwUDME9A==",
+  "dgSpecHash": "tTxJYFv7VFubG/FWMxq7DLvTxNAVTC0uzTdV/ZfmLpXruI5OjGPLpOFS4KsoZ4rGjb7S2R8JHB/qwcqYHPloLw==",
   "success": true,
   "projectFilePath": "/Users/centurion-pc/code/net-code/webapi/webapi.csproj",
   "expectedPackageFiles": [
     "/Users/centurion-pc/.nuget/packages/awssdk.core/3.7.100.14/awssdk.core.3.7.100.14.nupkg.sha512",
     "/Users/centurion-pc/.nuget/packages/awssdk.securitytoken/3.7.100.14/awssdk.securitytoken.3.7.100.14.nupkg.sha512",
+    "/Users/centurion-pc/.nuget/packages/bogus/34.0.2/bogus.34.0.2.nupkg.sha512",
     "/Users/centurion-pc/.nuget/packages/dnsclient/1.6.1/dnsclient.1.6.1.nupkg.sha512",
     "/Users/centurion-pc/.nuget/packages/fluentvalidation/11.5.1/fluentvalidation.11.5.1.nupkg.sha512",
     "/Users/centurion-pc/.nuget/packages/fluentvalidation.aspnetcore/11.3.0/fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
